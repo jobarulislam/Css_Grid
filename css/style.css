@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.container{
+height: 100%;
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+grid-template-rows: 50px auto 50px ;
+grid-gap: 2px;
+
+}
+.header{
+    background-color: aqua;
+    grid-column: 1 / -1;
+
+}
+.manu{
+    background-color: blueviolet;
+    grid-row: 2/3;
+    grid-column: 1/5;
+
+}
+.content{
+    background-color: beige;
+    grid-column: 5 / -1;
+}
+.footer{
+    color: aquamarine;
+    background-color: black;
+    grid-column: 1 /-1;
+}
